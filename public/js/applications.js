@@ -1,4 +1,4 @@
-jQuery.fx.interval = 250;
+jQuery.fx.interval = 100;
 
 $.fn.pulsefade = function(interval) {
   return this.each(function() {
