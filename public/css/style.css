@@ -1,0 +1,489 @@
+/* @override http://looce.com/hdstatic/public/css/style.css */
+
+@import url("reset.css");
+
+a {
+	-webkit-transition: color 0.2s linear;
+}
+#content a {
+	color: #595959;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #000;
+}
+@font-face {
+  font-family: 'league';
+  src: url('league.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Junction';
+  src: url('Junction.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+	color: #fff;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: "Junction", "Lucida Grande", sans-serif;
+}
+
+#top_layer, #bottom_layer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#top_layer {
+	z-index: 2;
+	background: url(../images/bg_top_layer.jpg);
+}
+
+#bottom_layer {
+	z-index: 1;
+	background: url(../images/bg_bottom_layer.jpg);
+}
+
+
+
+#wrapper {
+	width: 890px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 10;
+	padding-right: 35px;
+	padding-left: 35px;
+	margin-bottom: 50px;
+	background: rgba(0,0,0,0.05);
+}
+
+#header {
+	position: relative;
+	z-index: 10;
+	width: 960px;
+	margin: 0 auto 25px;
+	padding-top: 40px;
+	height: 64px;
+}
+
+h1 {
+	float: left;
+}
+h1 a{
+	background: url(../images/logo.png) top left no-repeat;
+	width: 300px;
+	height: 61px;
+	display: block;
+	text-indent: -9999px;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.2s linear;
+
+}
+
+h1 a:hover {
+	opacity: 1;
+}
+
+
+#nav {
+	float: right;
+	margin-top: 22px;
+}
+
+#nav li {
+	float: left;
+	margin-left: 30px;
+	list-style: none;
+}
+
+#nav li a {
+	color: rgba(255,255,255,0.71);
+	font-family: "league", "rockwell", serif ;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 24px !important;
+	
+}
+#nav li a:hover {
+	color: #fff;
+	text-shadow: rgba(0,0,0,0.1) 1px 1px 0;
+}
+.section {
+	float: left;
+	margin-bottom: 100px;
+}
+h2.section_heading {
+	width: 960px;
+	margin-left: -35px;
+	text-indent: -9999px;
+	margin-bottom: 75px;
+}
+
+#work h2.section_heading {
+	background: url(../images/work_heading.png) top left no-repeat;
+	height: 295px;
+}
+
+#about h2.section_heading {
+	background: url(../images/about_heading.png) top left no-repeat;
+	height: 258px;
+}
+
+#contact h2.section_heading {
+	background: url(../images/contact_heading.png) top left no-repeat;
+	height: 602px;
+}
+
+#resume h2.section_heading {
+	background: url(../images/resume_heading.png) top left no-repeat;
+	height: 526px;
+}
+
+form {
+	width: 888px;
+	float: left;
+}
+
+
+input, textarea {
+	border: 1px solid rgba(225,246,255,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 25px;
+	color: #fff;
+	-webkit-transition: border .25s linear;
+	-webkit-transition: background-color .25s linear;
+	background-color: rgba(255,255,255,0.13);
+	outline:  none;
+	text-shadow: rgba(0,0,0,0.25) 1px 1px 0;
+	width: 98%;
+	padding: 10px;
+
+
+}
+
+input:focus, textarea:focus {
+	border: 1px solid #fff;
+	background-color: rgba(255,255,255,0.29);
+
+}
+
+
+label {
+	display: block;
+	clear: both;
+	font-size: 25px;
+	margin-bottom: 5px;
+	margin-top: 25px;
+}
+
+input[type="submit"] {
+	width: 150px;
+	height: 50px;
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.15);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 25px;
+	color: #fff;
+	float: right;
+	margin-right: -3px;
+	-webkit-transition: border .15s linear;
+	-webkit-transition: background-color .15s linear;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: rgba(0,0,0,0.4);
+	border: 1px solid rgba(0,0,0,0.3);
+}
+
+.content {
+	float: left;
+}
+#social_media {
+	float: left;
+	margin-left: 50px;
+	width: 360px;
+}
+
+#social_media li{
+	list-style-type: none;
+}
+
+#social_media li a {
+	display: block;
+	width: 80px;
+	height: 80px;
+	background: url(../images/social_icons.png)no-repeat;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+}
+
+li#twitter a { background-position: top left; }
+li#twitter a:hover { background-position: bottom left; }
+
+li#linkedin a { background-position: top center; }
+li#linkedin a:hover { background-position: bottom center; }
+
+li#delicious a { background-position: top right; }
+li#delicious a:hover { background-position: bottom right; }
+
+
+#jobs, #resume .right {
+	float: left;
+}
+
+#jobs {
+	width: 551px;
+	margin-right: 25px;
+
+}
+
+#jobs li.job {
+	list-style: none;
+	margin-bottom: 25px;
+	margin-right: 0;
+	width: 500px;
+}
+#resume h4{
+	font-size: 18px;
+}
+
+#resume h5, #resume h6 {
+	font-size: 12px;
+	font-weight: normal;
+	font-style: italic;
+	margin-bottom: 10px;
+}
+
+#resume h6 {
+	float: right;
+	margin-top: -50px;
+}
+
+
+.right #education, .right .skillset {
+	float: right;
+	clear: both;
+	width: 272px;
+	margin-bottom: 25px;
+}
+#education h6 {
+	margin-top: -70px;
+}
+
+.skillset h4 {
+	margin-bottom: 15px;
+}
+
+.skillset h5 {
+	margin-bottom: 0 !important;
+	margin-top: 15px;
+}
+
+.skillset ul {
+	margin-left: 25px;
+}
+
+#vcard {
+	float: left;
+	margin-left: 285px;
+	margin-top: -36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h3 {
+	font-family: "league" ;
+	font-size: 38px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	color: #fff;
+}
+
+.work_item {
+	float: left;
+	margin-bottom: 50px;
+}
+
+.work_item img {
+	margin-bottom: 18px;
+}
+p.desc {
+	width: 480px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.work_item p.desc {
+	width: auto;
+}
+
+
+.meta_block,  li.job, #education, .skillset {
+	float: left;
+	width: 355px;
+	padding: 25px;
+	background-color: rgba(0,0,0,0.05);
+	border: 1px solid rgba(0,0,0,0.11);
+	margin-right: 25px;
+	min-height: 60px;
+}
+
+
+.meta {
+	float: left;
+	width: 448px;
+	padding: 0;
+}
+.meta.last {
+	margin-right: 0;
+}
+
+.meta_block {
+	margin-bottom: 25px;
+	width: 448px;
+}
+.meta h4 {
+	float: left;
+	height: 50px;
+}
+
+ul.skills {
+	width: 451px;
+}
+ul.skills li {
+	float: left;
+	list-style-type: square;
+	margin-left: 50px;
+	margin-bottom: 10px;
+	width: 125px;
+}
+
+
+
+.work_item .left {
+	float: left;
+	width: 500px;
+	clear: left;
+}
+
+.work_item .right {
+	float: left;
+	width: 368px;
+	margin-left: 25px;
+}
+
+
+/* GFDA */
+
+#gfda .meta {
+	margin-bottom: -549px;
+}
+#gfda .left {
+	margin-top: 442px;
+}
+#gfda .right {
+	margin-top: 165px;
+}
+
+/* gfda iphone */
+
+#gfda_iphone_app .left img{
+	margin-right: 36px;
+}
+
+#gfda_iphone_app .right{
+	margin-top: -278px;
+}
+
+#gfda_iphone_app .right img {
+	width: 381px;
+}
+
+img.last {
+	margin-right: 0 !important;
+}
+
+
+/* mustache */
+
+#mustache .right {
+	margin-top: -313px;
+}
+
+/* Life Rules */
+
+#liferules .right {
+	margin-top: -315px;
+}
+

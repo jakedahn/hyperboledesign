@@ -1,1 +1,190 @@
-%h1 Hello World
+#about.section
+  %h2.section_heading About
+  .content
+    %h3 About HyperboleDesign
+    %p.desc Hi my name is Jake Dahn, and I started Hyperbole Design in 2005 as a way to further my skills in design. Since then, as the web has evolved, my main focus has switched mostly to web development and programming.
+    %p.desc
+      In 2010 I started working with
+      %a{:href => "http://www.ansolabs.com/", :target => "_blank", :title => "Anso Labs"} AnsoLabs
+      on
+      = succeed "," do
+        %a{:href => "http://nebula.nasa.gov/", :target => "_blank", :title => "NASA Nebula - Cloud Computing"} NASA's Nebula Project
+      as an interface designer and developer. Since then much of my work has been open sourced as part of the
+      %a{:href => "http://www.openstack.org/", :target => "_blank", :title => "OpenStack Open Source Cloud Computing Software"} OpenStack
+      project. If you would like to see some of my other open source projects you should definitely checkout my
+      = succeed "." do
+        %a{:href => "http://github.com/jakedahn", :target => "_blank", :title => "Jake Dahn's Github Account"} Github account
+    %p.desc I've created this portfolio as a way to showcase some of my favorite projects, or at least the ones I've had the most fun working on. If you would like to work with me, please feel free to drop me a line via the contact form below.
+#work.section
+  %h2.section_heading Work
+  #gfda.work_item
+    .meta
+      %h3 Good Fucking Dating Advice
+      %p.desc Good Fucking Dating Advice was a fun and simple web application built using Ruby on Rails. The site was  created to be dual purposed; the first goal was to share the dating wisdom of the internet and the second goal was to build the site as a gift for someone's lucky lady friend.
+      .meta_block
+        %h4 Roles:
+        %ul.skills
+          %li Frontend Developer
+          %li Backend Developer
+      .meta_block
+        %h4 Tech:
+        %ul.skills
+          %li HTML+CSS
+          %li Ruby
+          %li Ruby on Rails
+    .images
+      .left
+        %img.large{:alt => "Good Fucking Dating Advice About Page.", :src => "public/images/gfda/main.jpg"}/
+      .right
+        %img.small{:alt => "Good Fucking Dating Advice Home Page.", :src => "public/images/gfda/sub2.jpg"}/
+        %img.small{:alt => "Good Fucking Dating Advice Submission Page.", :src => "public/images/gfda/sub1.jpg"}/
+  #gfda_iphone_app.work_item
+    .meta
+      %h3 Good Fucking Dating Advice iPhone App
+      %p.desc Everyone has been on a date which has gone horribly wrong. This is why I decided to create the Good Fucking Dating Advice mobile application. It was created using Appcelerator Titanium and it runs on both Apple's iOS devices as well as Google's Android phones.
+      .meta_block
+        %h4 Roles:
+        %ul.skills
+          %li Interface Designer
+          %li Mobile Developer
+      .meta_block
+        %h4 Tech:
+        %ul.skills
+          %li Titanium
+          %li JavaScript
+          %li iOS Development
+          %li Android Development
+    .images
+      .left
+        %img{:alt => "Good Fucking Dating Advice iPhone Application 'her' Screen.", :src => "public/images/gfda-iphone/sub1.png"}/
+        %img.last{:alt => "Good Fucking Dating Advice iPhone Application 'his' Screen.", :src => "public/images/gfda-iphone/sub2.png"}/
+      .right
+        %img{:alt => "Good Fucking Dating Advice iPhone Application Splash Screen.", :src => "public/images/gfda-iphone/main.png"}/
+  #mustache.work_item
+    .meta
+      %h3 Mustache.me
+      %p.desc Mustache.me is a personal project which was created purely for fun. The goal of the project was to learn how to deploy Sinatra applications, in addition to learning more about the ImageMagick API. A new version of this site will be launched later this spring in 2011.
+      .meta_block
+        %h4 Roles:
+        %ul.skills
+          %li Backend Developer
+          %li Interface Design
+          %li Frontend Developer
+      .meta_block
+        %h4 Tech:
+        %ul.skills
+          %li HAML+SASS
+          %li Ruby
+          %li Sinatra
+          %li AJAX+jQuery
+    .images
+      .left
+        %img.small{:alt => "Mustache.me Single View Page.", :src => "public/images/mustache/main.jpg"}/
+      .right
+        %img.large{:alt => "Mustache.me Homepage.", :src => "public/images/mustache/sub1.jpg"}/
+  #liferules.work_item
+    .meta
+      %h3 LifeRules.me
+      %p.desc LifeRules.me is a personal project to collect and curate thousands of personal life rules for the creation of a self designed and published book. The application was built using Ruby on Rails and the all of the html and css were hand written in the form of Haml and Sass.
+      .meta_block
+        %h4 Roles:
+        %ul.skills
+          %li Frontend Developer
+          %li Interface Design
+          %li Backend Developer
+      .meta_block
+        %h4 Tech:
+        %ul.skills
+          %li Haml+Sass
+          %li CSS3
+          %li Ruby
+          %li Ruby on Rails
+    .images
+      .left
+        %img.large{:alt => "Mustache.me Homepage.", :src => "public/images/liferules/main.jpg"}/
+      .right
+        %img.small{:alt => "Mustache.me Single View Page.", :src => "public/images/liferules/sub1.jpg"}/
+        %img.small{:alt => "Mustache.me Single View Page.", :src => "public/images/liferules/sub2.jpg"}/
+  #contact.section
+    %h2.section_heading Contact
+    %h3 Contact HyperboleDesign
+    %a#vcard{:href => "public/JakeDahn.vcf"} Download vCard
+    %form{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+      %fieldset
+        %label{:for => "name"} Name
+        %input#name{:name => "name", :type => "text", :value => ""}/
+        %label{:for => "email"} Email
+        %input#email{:name => "email", :type => "text", :value => ""}/
+        %label{:for => "email"} Message
+        %textarea{:cols => "40", :name => "message", :rows => "8"}
+        %input{:type => "submit", :value => "Say hello."}/
+    #social_media
+      %h3 Connect
+      %ul
+        %li#twitter
+          %a{:href => "http://twitter.com/jakedahn", :target => "_blank", :title => "Follow Jake Dahn on Twitter."} Twitter
+        %li#linkedin
+          %a{:href => "http://www.linkedin.com/in/jakedahn", :target => "_blank", :title => "Find Jake Dahn on LinkedIn."} LinkedIn
+        %li#delicious
+          %a{:href => "http://delicious.com/jakedahn", :target => "_blank", :title => "See what Jake Dahn bookmarks on Delicious."} Delicious
+  #resume.section
+    %h2.section_heading Resume
+    %h3 Experience of Jake Dahn
+    %ul#jobs
+      %li.job
+        %h4 MarkupIsArt, LLP
+        %h5 Co-Founder
+        %h6 October 2009 &mdash; present
+        %p Co-Founder of MarkupIsArt; a small shop which designs and builds web interfaces and mobile applications for startups and medium sized businesses.
+      %li.job
+        %h4 Overstimulate, LLC + Anso Labs
+        %h5 Web Developer
+        %h6 October 2009 &mdash; present
+        %p
+          Worked as an interface designer, frontend developer, and backend developer using Python/Django for the majority of my work. Helped design and build the dashboard interface for NASA's Nebula project as well as the open source dashboard interface for the
+          %a{:href => "http://openstack.org", :target => "_blank"} OpenStack
+          project.
+      %li.job
+        %h4 HyperboleDesign
+        %h5 Freelance Web Developer
+        %h6 February 2006 &mdash; February 2011
+        %p Worked as a freelance web developer with various small to medium sized companies. I specialized in frontend development (html/css/js).
+      %li.job
+        %h4 Grandpa-George
+        %h5 Web Designer / Developer
+        %h6 July 2008 &mdash; September 2009
+        %p Worked as a well rounded web developer doing design, frontend development, backend development, and server administration.
+      %li.job
+        %h4 Flock
+        %h5 Intern / Volunteer QA
+        %h6 November 2005 &mdash; July 2006
+        %p This included working on general Quality Assurance (ie. software testing, managing and maintaining the bug tracker), in addition to helping out with small tasks related to documentation and support.
+    .right
+      #education
+        %h4 Art Institutes International Minnesota
+        %h5 B.S. Web Design &amp; Interactive Media (computer science + graphic design)
+        %h6 March 2011
+      .skillset
+        %h4 Programming Languages
+        %ul
+          %li HTML
+          %li CSS
+          %li JavaScript
+          %li Ruby
+          %li Python
+          %li PHP
+      .skillset
+        %h4 Familiar Frameworks
+        %h5 Frontend
+        %ul
+          %li jQuery
+          %li MooTools
+          %li Prototype
+        %h5 Backend
+        %ul
+          %li Ruby on Rails
+          %li Sinatra
+          %li NodeJS
+          %li Django
+          %li CodeIngiter
+          %li WordPress

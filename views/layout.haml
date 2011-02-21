@@ -1,21 +1,32 @@
-!!! 5
-%html
+!!!
+%html{:lang => "en", "xml:lang" => "en"}
   %head
-    %meta{:"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8" }
-    %title= @title
-    %meta{:name=>"Author", :content=>"author"}
-    %meta{:name=>"Robots", :content=>"index,all"}
-    %meta{:name=>"Keywords", :content=>"keywords"}
-    %meta{:name=>"Description", :content=>"description"}
-    
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :type => "text/javascript", :charset => "utf-8"}
-    %script{:src => "js/app.js", :type => "text/javascript", :charset => "utf-8"}
-    
-    %link{:rel=>"stylesheet", :href=>"/style.css", :media=>"screen"}
-    
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "content-type"}/
+    %title Hyperbole Design
+    %meta{:content => "Jake Dahn", :name => "Author"}/
+    %meta{:content => "index, all", :name => "Robots"}/
+    %meta{:content => "Portfolio of HyperboleDesign, a small web design and development shop based out of Minneapolis.", :name => "Description"}/
+    %link{:href => "http://kernest.com/fonts/junction.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "public/css/style.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %script{:charset => "utf-8", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js", :type => "text/javascript"}
+    %script{:charset => "utf-8", :src => "public/js/applications.js", :type => "text/javascript"}
   %body
-    %div#wrapper        
-      %div#content
+    #bottom_layer &nbsp;
+    #top_layer &nbsp;
+    #header
+      %h1
+        %a{:href => "#"} Hyperbole Design
+      %ul#nav
+        %li
+          %a{:href => "#about", :title => "Find out more about HyperboleDesign and Jake Dahn."} About
+        %li
+          %a{:href => "#work", :title => "Look at the work from HyperboleDesign and Jake Dahn."} Work
+        %li
+          %a{:href => "#contact", :title => "Contact HyperboleDesign and Jake Dahn by filling out the contact form."} Contact
+        %li
+          %a{:href => "#resume", :title => "See the experience of HyperboleDesign and Jake Dahn."} Resume
+    #wrapper
+      #content
         = yield
-      %div#footer
-        &copy; 2009 First Last
+      #footer
+        %p.copy Copyright &copy; 2010 &mdash; Jake Dahn
