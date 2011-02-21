@@ -8,11 +8,6 @@ module SinatraApp
     set :sessions, true
     set :public, File.dirname(__FILE__) + '/public'
 
-    get '/style.css' do
-      content_type 'text/css'
-      sass :style
-    end
-
     get '/' do
       haml :index
     end
