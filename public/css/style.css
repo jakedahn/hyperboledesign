@@ -221,8 +221,12 @@ input[type="submit"]:hover {
 	float: left;
 	margin-left: 50px;
 	width: 360px;
+	margin-top: -53px;
 }
 
+#social_media ul {
+	margin-left: 29px;
+}
 #jobs, #resume .right {
 	float: left;
 }
@@ -462,6 +466,14 @@ img.last {
 
 #mustache .right {
 	margin-top: -294px;
+}
+
+#nasa .right {
+	margin-top: -275px;
+}
+
+#openstack .right {
+	margin-top: -275px;
 }
 
 /* Life Rules */
