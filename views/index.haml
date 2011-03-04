@@ -108,7 +108,6 @@
   #contact.section
     %h2.section_heading Contact
     %h3 Contact HyperboleDesign
-    %a#vcard{:href => "/JakeDahn.vcf"} Download vCard
     %form{"accept-charset" => "utf-8", :action => "#", :method => "post"}
       %fieldset
         %label{:for => "name"} Name
@@ -121,11 +120,13 @@
     #social_media
       %h3 Connect
       %ul
-        %li#twitter
+        %li
+          %a{:href => "/JakeDahn.vcf"} Download vCard
+        %li
           %a{:href => "http://twitter.com/jakedahn", :target => "_blank", :title => "Follow Jake Dahn on Twitter."} Twitter
-        %li#linkedin
+        %li
           %a{:href => "http://www.linkedin.com/in/jakedahn", :target => "_blank", :title => "Find Jake Dahn on LinkedIn."} LinkedIn
-        %li#delicious
+        %li
           %a{:href => "http://delicious.com/jakedahn", :target => "_blank", :title => "See what Jake Dahn bookmarks on Delicious."} Delicious
   #resume.section
     %h2.section_heading Resume

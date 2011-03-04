@@ -14,6 +14,6 @@ $.fn.pulsefade = function(interval) {
 $(function(){
  // $("#top_layer").pulsefade(60000);
  // $("#top_layer").pulsefade(30000);
- $("#top_layer").pulsefade(10000);
+ // $("#top_layer").pulsefade(10000);
  // $("#top_layer").pulsefade(5000);
 })

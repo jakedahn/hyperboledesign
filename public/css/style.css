@@ -1,3 +1,5 @@
+/* @override http://looce.com:4567/css/style.css */
+
 /* @override http://looce.com/hdstatic/public/css/style.css */
 
 @import url("reset.css");
@@ -145,8 +147,13 @@ h2.section_heading {
 	height: 526px;
 }
 
+#footer h2.section_heading {
+	background: url(../images/footer_heading.png) top left no-repeat;
+	height: 590px;
+}
+
 form {
-	width: 888px;
+	width: 488px;
 	float: left;
 }
 
@@ -156,8 +163,8 @@ input, textarea {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	font-size: 25px;
-	color: #fff;
+	font-size: 22px;
+	color: rgba(255,255,255,0.83);
 	-webkit-transition: border .25s linear;
 	-webkit-transition: background-color .25s linear;
 	background-color: rgba(255,255,255,0.13);
@@ -195,10 +202,11 @@ input[type="submit"] {
 	font-size: 25px;
 	color: #fff;
 	float: right;
-	margin-right: -3px;
+	margin-right: -10px;
 	-webkit-transition: border .15s linear;
 	-webkit-transition: background-color .15s linear;
 	cursor: pointer;
+	margin-top: 25px;
 }
 
 input[type="submit"]:hover {
@@ -214,31 +222,6 @@ input[type="submit"]:hover {
 	margin-left: 50px;
 	width: 360px;
 }
-
-#social_media li{
-	list-style-type: none;
-}
-
-#social_media li a {
-	display: block;
-	width: 80px;
-	height: 80px;
-	background: url(../images/social_icons.png)no-repeat;
-	text-indent: -9999px;
-	float: left;
-	margin-right: 25px;
-	margin-bottom: 25px;
-}
-
-li#twitter a { background-position: top left; }
-li#twitter a:hover { background-position: bottom left; }
-
-li#linkedin a { background-position: top center; }
-li#linkedin a:hover { background-position: bottom center; }
-
-li#delicious a { background-position: top right; }
-li#delicious a:hover { background-position: bottom right; }
-
 
 #jobs, #resume .right {
 	float: left;
@@ -453,7 +436,7 @@ ul.skills li {
 	margin-top: 442px;
 }
 #gfda .right {
-	margin-top: 165px;
+	margin-top: 168px;
 }
 
 /* gfda iphone */
@@ -478,12 +461,22 @@ img.last {
 /* mustache */
 
 #mustache .right {
-	margin-top: -313px;
+	margin-top: -294px;
 }
 
 /* Life Rules */
 
 #liferules .right {
-	margin-top: -315px;
+	margin-top: -295px;
 }
 
+#footer {
+	clear: both;
+}
+
+p.copy {
+	float: left;
+	padding-bottom: 61px;
+	margin-top: -50px;
+	opacity: .4;
+}
