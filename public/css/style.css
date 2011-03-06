@@ -37,6 +37,7 @@ body {
 	font-size: 14px;
 	line-height: 20px;
 	font-family: "Junction", "Lucida Grande", sans-serif;
+	background: #adbc63;
 }
 
 #top_layer, #bottom_layer {
@@ -455,17 +456,12 @@ ul.skills li {
 	margin-left: 25px;
 }
 
-
-#gfda .right { margin-top: 168px; }
-
-#nasa .right, #openstack .right, #mustache .right, #liferules .right  { margin-top: -274px;}
+#nasa .right, #openstack .right, #mustache .right, #liferules .right, #gfda .right  { margin-top: -274px;}
 
 #gfda_iphone_app .right {
 	margin-top: -278px;
 }
 
-#gfda .meta { margin-bottom: -549px; }
-#gfda .left { margin-top: 442px; }
 
 
 #gfda_iphone_app .left img{
@@ -508,4 +504,13 @@ h3.form_error {
 	font-weight: normal;
 }
 
+.spinner {
+	background: url(../images/spinner.gif);
+	width: 32px;
+	height: 32px;
+	float: right;
+	clear: both;
+	margin-right: 157px;
+	margin-top: -39px;
+}
 

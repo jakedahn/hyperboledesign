@@ -1,7 +1,15 @@
 $(function(){
+  
+  $(":submit").after("<div class='spinner'></div>")
+  $(".spinner").hide()
+  
   var options = {
+    beforeSubmit: function(){
+      $(".spinner").fadeIn("fast")
+    },
     async: false,
     success: function(data){
+      $(".spinner").fadeOut("slow")
       validation = JSON.parse(data);
       $("h3.form_error").remove()
       $("label.error").remove()
