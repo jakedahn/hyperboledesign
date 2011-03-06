@@ -160,6 +160,14 @@ form {
 	float: left;
 }
 
+div.form_success {
+	float: left;
+	width: 488px;
+}
+
+h3.form_success {
+	line-height: 45px;
+}
 
 input, textarea {
 	border: 1px solid rgba(225,246,255,0.75);
@@ -177,6 +185,19 @@ input, textarea {
 	padding: 10px;
 
 
+}
+
+input.error, textarea.error {
+	border: 1px solid rgba(214,27,27,0.75);
+	background-color: rgba(255,0,0,0.6);
+}
+
+label.error {
+	font-size: 12px;
+	color: #c94228;
+	float: right;
+	margin-top: 0;
+	margin-right: -10px;
 }
 
 input:focus, textarea:focus {
@@ -210,6 +231,7 @@ input[type="submit"] {
 	-webkit-transition: background-color .15s linear;
 	cursor: pointer;
 	margin-top: 25px;
+	clear: both;
 }
 
 input[type="submit"]:hover {
@@ -478,3 +500,12 @@ a.view_site {
 	padding: 10px;
 	margin-right: -448px;
 }
+
+h3.form_error {
+	font-size: 12px;
+	color: #c94228;
+	font-family: junction;
+	font-weight: normal;
+}
+
+
