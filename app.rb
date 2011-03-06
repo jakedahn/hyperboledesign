@@ -14,20 +14,19 @@ module SinatraApp
     end
     
     post '/contact' do
-      erb(ENV['SG_SERVER'])
-      
-      # Pony.mail(:to => params[:contact]["email"], 
-      #           :from => "jake@hyperboledesign.com",
-      #           :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
-      #           :body => erb(:email),
-      #           :via => :smtp, :smtp => {
-      #             :host     => env["SG_SERVER"],
-      #             :port     => '25',
-      #             :user     => env["SG_USER"],
-      #             :password => env["SG_PASS"],
-      #             :auth     => :plain,
-      #             :domain   => "hyperboledesign.com"
-      #           })
+
+      Pony.mail(:to => params[:contact]["email"], 
+                :from => "jake@hyperboledesign.com",
+                :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
+                :body => erb(:email),
+                :via => :smtp, :smtp => {
+                  :host     => env["SG_SERVER"],
+                  :port     => '25',
+                  :user     => env["SG_USER"],
+                  :password => env["SG_PASS"],
+                  :auth     => :plain,
+                  :domain   => "hyperboledesign.com"
+                })
     end
 
   end
