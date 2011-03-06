@@ -14,7 +14,7 @@ module SinatraApp
     end
     
     post '/contact' do
-      erb(ENV['RACK_ENV'].to_yaml)
+      erb(ENV.to_yaml)
       
       # Pony.mail(:to => params[:contact]["email"], 
       #           :from => "jake@hyperboledesign.com",
