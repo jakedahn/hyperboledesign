@@ -434,26 +434,20 @@ ul.skills li {
 }
 
 
-/* GFDA */
+#gfda .right { margin-top: 168px; }
 
-#gfda .meta {
-	margin-bottom: -549px;
-}
-#gfda .left {
-	margin-top: 442px;
-}
-#gfda .right {
-	margin-top: 168px;
+#nasa .right, #openstack .right, #mustache .right, #liferules .right  { margin-top: -274px;}
+
+#gfda_iphone_app .right {
+	margin-top: -278px;
 }
 
-/* gfda iphone */
+#gfda .meta { margin-bottom: -549px; }
+#gfda .left { margin-top: 442px; }
+
 
 #gfda_iphone_app .left img{
 	margin-right: 36px;
-}
-
-#gfda_iphone_app .right{
-	margin-top: -278px;
 }
 
 #gfda_iphone_app .right img {
@@ -464,26 +458,6 @@ img.last {
 	margin-right: 0 !important;
 }
 
-
-/* mustache */
-
-#mustache .right {
-	margin-top: -294px;
-}
-
-#nasa .right {
-	margin-top: -275px;
-}
-
-#openstack .right {
-	margin-top: -275px;
-}
-
-/* Life Rules */
-
-#liferules .right {
-	margin-top: -295px;
-}
 
 #footer {
 	clear: both;
