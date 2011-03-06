@@ -28,7 +28,7 @@ module SinatraApp
                 :from => params[:contact]["email"],
                 :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
                 :body => erb(:email),
-                # :via => :smtp,
+                :via => :smtp,
                 :via_options => {
                   :address         => "smtp.sendgrid.com",
                   :port            => '25',
