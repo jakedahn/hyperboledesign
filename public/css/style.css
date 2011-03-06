@@ -1,9 +1,3 @@
-/* @override http://looce.com:4567/css/style.css */
-
-/* @override http://looce.com:4567/css/style.css */
-
-/* @override http://looce.com/hdstatic/public/css/style.css */
-
 @import url("reset.css");
 
 a {
@@ -56,8 +50,6 @@ body {
 	background: url(../images/bg_bottom_layer.jpg);
 }
 
-
-
 #wrapper {
 	width: 890px;
 	margin: 0 auto;
@@ -95,7 +87,6 @@ h1 a{
 h1 a:hover {
 	opacity: 1;
 }
-
 
 #nav {
 	float: right;
@@ -207,7 +198,6 @@ input:focus, textarea:focus {
 
 }
 
-
 label {
 	display: block;
 	clear: both;
@@ -260,7 +250,6 @@ input[type="submit"]:hover {
 #jobs {
 	width: 551px;
 	margin-right: 25px;
-
 }
 
 #jobs li.job {
@@ -284,7 +273,6 @@ input[type="submit"]:hover {
 	float: right;
 	margin-top: -50px;
 }
-
 
 .right #education, .right .skillset {
 	float: right;
@@ -315,66 +303,6 @@ input[type="submit"]:hover {
 	margin-top: -36px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 h3 {
 	font-family: "league" ;
 	font-size: 38px;
@@ -400,7 +328,6 @@ p.desc {
 .work_item p.desc {
 	width: auto;
 }
-
 
 .meta_block,  li.job, #education, .skillset, .view_site {
 	float: left;
@@ -442,8 +369,6 @@ ul.skills li {
 	width: 150px;
 }
 
-
-
 .work_item .left {
 	float: left;
 	width: 500px;
@@ -462,8 +387,6 @@ ul.skills li {
 	margin-top: -278px;
 }
 
-
-
 #gfda_iphone_app .left img{
 	margin-right: 36px;
 }
@@ -475,7 +398,6 @@ ul.skills li {
 img.last {
 	margin-right: 0 !important;
 }
-
 
 #footer {
 	clear: both;
@@ -513,4 +435,3 @@ h3.form_error {
 	margin-right: 157px;
 	margin-top: -39px;
 }
-
