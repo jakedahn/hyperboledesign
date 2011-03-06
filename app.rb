@@ -14,7 +14,7 @@ module SinatraApp
     end
     
     post '/contact' do
-
+#foo  
       Pony.mail(:to => params[:contact]["email"], 
                 :from => "jake@hyperboledesign.com",
                 :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
