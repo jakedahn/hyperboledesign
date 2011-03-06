@@ -172,14 +172,14 @@
   #contact.section
     %h2.section_heading Contact
     %h3 Contact HyperboleDesign
-    %form{"accept-charset" => "utf-8", :action => "#", :method => "post"}
+    %form{"accept-charset" => "utf-8", :action => "/contact", :method => "post"}
       %fieldset
         %label{:for => "name"} Name
-        %input#name{:name => "name", :type => "text", :value => ""}/
+        %input#name{:name => "contact[name]", :type => "text", :value => ""}/
         %label{:for => "email"} Email
-        %input#email{:name => "email", :type => "text", :value => ""}/
+        %input#email{:name => "contact[email]", :type => "text", :value => ""}/
         %label{:for => "email"} Message
-        %textarea{:cols => "40", :name => "message", :rows => "8"}
+        %textarea{:cols => "40", :name => "contact[message]", :rows => "8"}
         %input{:type => "submit", :value => "Say hello."}/
     #social_media
       %h3 Connect
