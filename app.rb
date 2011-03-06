@@ -3,7 +3,7 @@ require 'sinatra'
 require 'sass'
 require 'haml'
 require 'pony'
-require 'yaml'
+
 module SinatraApp
   class App < Sinatra::Base
     set :sessions, true
