@@ -23,7 +23,7 @@ module SinatraApp
                   :host     => "smtp.sendgrid.net",
                   :port     => '25',
                   :user     => ENV['SENDGRID_USERNAME'],
-                  :password => NV['SENDGRID_PASSWORD'],
+                  :password => ENV['SENDGRID_PASSWORD'],
                   :auth     => :login,
                   :domain   => ENV['SENDGRID_DOMAIN']
                 })
