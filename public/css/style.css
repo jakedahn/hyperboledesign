@@ -1,5 +1,7 @@
 /* @override http://looce.com:4567/css/style.css */
 
+/* @override http://looce.com:4567/css/style.css */
+
 /* @override http://looce.com/hdstatic/public/css/style.css */
 
 @import url("reset.css");
@@ -8,8 +10,9 @@ a {
 	-webkit-transition: color 0.2s linear;
 }
 #content a {
-	color: #595959;
-	text-decoration: none;
+	text-decoration: underline;
+	font-style: italic;
+	color: #fff;
 }
 
 #content a:hover {
@@ -263,7 +266,7 @@ input[type="submit"]:hover {
 .right #education, .right .skillset {
 	float: right;
 	clear: both;
-	width: 272px;
+	width: 268px;
 	margin-bottom: 25px;
 }
 #education h6 {
@@ -376,7 +379,7 @@ p.desc {
 }
 
 
-.meta_block,  li.job, #education, .skillset {
+.meta_block,  li.job, #education, .skillset, .view_site {
 	float: left;
 	width: 355px;
 	padding: 25px;
@@ -413,7 +416,7 @@ ul.skills li {
 	list-style-type: square;
 	margin-left: 50px;
 	margin-bottom: 10px;
-	width: 125px;
+	width: 150px;
 }
 
 
@@ -491,4 +494,13 @@ p.copy {
 	padding-bottom: 61px;
 	margin-top: -50px;
 	opacity: .4;
+}
+
+a.view_site {
+	width: auto;
+	min-height: 0;
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-right: -448px;
 }
