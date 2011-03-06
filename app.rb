@@ -24,7 +24,7 @@ module SinatraApp
                   :port     => '25',
                   :user     => env["SG_USER"],
                   :password => env["SG_PASS"],
-                  :auth     => :plain,
+                  :auth     => :login,
                   :domain   => "hyperboledesign.com"
                 })
     end
