@@ -14,19 +14,20 @@ module SinatraApp
     end
     
     post '/contact' do
-#foo  
+ 
       Pony.mail(:to => "jake@hyperboledesign.com", 
                 :from => params[:contact]["email"],
                 :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
                 :body => erb(:email),
-                :via => :smtp, :smtp => {
-                  :host     => "smtp.sendgrid.net",
-                  :port     => '25',
-                  :user     => ENV['SENDGRID_USERNAME'],
-                  :password => ENV['SENDGRID_PASSWORD'],
-                  :auth     => :login,
-                  :domain   => ENV['SENDGRID_DOMAIN']
+                :via_options => {
+                  :address         => "smtp.sendgrid.net",
+                  :port            => '25',
+                  :user_name       => ENV['SENDGRID_USERNAME'],
+                  :password        => ENV['SENDGRID_PASSWORD'],
+                  :authentication  => :login,
+                  :domain          => ENV['SENDGRID_DOMAIN']
                 })
+                
     end
 
   end
