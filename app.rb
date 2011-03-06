@@ -20,12 +20,12 @@ module SinatraApp
                 :subject => "Contact Form Inquiry from #{params[:contact]['name']}",
                 :body => erb(:email),
                 :via => :smtp, :smtp => {
-                  :host     => env["SG_SERVER"],
+                  :host     => "smtp.sendgrid.net",
                   :port     => '25',
-                  :user     => env["SG_USER"],
-                  :password => env["SG_PASS"],
+                  :user     => ENV['SENDGRID_USERNAME'],
+                  :password => NV['SENDGRID_PASSWORD'],
                   :auth     => :login,
-                  :domain   => "hyperboledesign.com"
+                  :domain   => ENV['SENDGRID_DOMAIN']
                 })
     end
 
