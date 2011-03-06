@@ -1,5 +1,30 @@
 @import url("reset.css");
 
+#work h2.section_heading {
+	background: url(../images/work_heading.png) top left no-repeat;
+	height: 295px;
+}
+
+#about h2.section_heading {
+	background: url(../images/about_heading.png) top left no-repeat;
+	height: 258px;
+}
+
+#contact h2.section_heading {
+	background: url(../images/contact_heading.png) top left no-repeat;
+	height: 602px;
+}
+
+#resume h2.section_heading {
+	background: url(../images/resume_heading.png) top left no-repeat;
+	height: 526px;
+}
+
+#footer h2.section_heading {
+	background: url(../images/footer_heading.png) top left no-repeat;
+	height: 590px;
+}
+
 a {
 	-webkit-transition: color 0.2s linear;
 }
@@ -120,31 +145,6 @@ h2.section_heading {
 	margin-left: -35px;
 	text-indent: -9999px;
 	margin-bottom: 75px;
-}
-
-#work h2.section_heading {
-	background: url(../images/work_heading.png) top left no-repeat;
-	height: 295px;
-}
-
-#about h2.section_heading {
-	background: url(../images/about_heading.png) top left no-repeat;
-	height: 258px;
-}
-
-#contact h2.section_heading {
-	background: url(../images/contact_heading.png) top left no-repeat;
-	height: 602px;
-}
-
-#resume h2.section_heading {
-	background: url(../images/resume_heading.png) top left no-repeat;
-	height: 526px;
-}
-
-#footer h2.section_heading {
-	background: url(../images/footer_heading.png) top left no-repeat;
-	height: 590px;
 }
 
 form {
