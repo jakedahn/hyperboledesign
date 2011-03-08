@@ -34,7 +34,7 @@ module SinatraApp
                   :port            => '25',
                   :user_name       => ENV['SENDGRID_USERNAME'],
                   :password        => ENV['SENDGRID_PASSWORD'],
-                  :authentication  => :login,
+                  :authentication  => :plain,
                   :domain          => ENV['SENDGRID_DOMAIN']
                 }
         )
