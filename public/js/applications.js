@@ -18,7 +18,7 @@ $(function(){
       if (validation.success) {
         if ($(".form_success").length == 0) {
           $("#contact_form").after("<div class='form_success'><h3 class='form_success'></h3></div>")
-          $("h3.form_success").text("Thank you for filling out my contact form, I will be in contact with you shortly.")
+          $("h3.form_success").text("Thank you for filling out my contact form, <br />I will be in contact with you shortly.")
           $(".form_success").hide()
         } 
         
