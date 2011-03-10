@@ -43,9 +43,10 @@ module SinatraApp
         puts email.errors
         return {:success => false, :errors => email.errors}.to_json
       end
+    end
     
-      
-              
+    get "*" do
+      haml :fourohfour
     end
 
   end
