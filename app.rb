@@ -38,10 +38,20 @@ module SinatraApp
                   :domain         => ENV['SENDGRID_DOMAIN']
                 }
         )
-        return {:success => true }.to_json
+                
+        unless request.xhr?
+          haml :contact
+        else
+          return {:success => true }.to_json
+        end
       else
-        puts email.errors
-        return {:success => false, :errors => email.errors}.to_json
+        @errors = email.errors
+        
+        unless request.xhr?
+          haml :contact
+        else
+          return  {:success => false, :errors => @errors}.to_json
+        end
       end
     end
     
