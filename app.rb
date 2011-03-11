@@ -47,6 +47,10 @@ module SinatraApp
       else
         @errors = email.errors
         
+        @name = @errors["name"].blank? ? "" : "error"
+        @email = @errors["email"].blank? ? "" : "error"
+        @msg = @errors["msg"].blank? ? "" : "error"
+
         unless request.xhr?
           haml :contact
         else

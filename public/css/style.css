@@ -137,6 +137,11 @@ h2.section_heading {
 	height: 602px;
 }
 
+#fourohfour h2.section_heading {
+	background: url(../images/fourohfour.png) top left no-repeat;
+	height: 935px;
+}
+
 #resume h2.section_heading {
 	background: url(../images/resume_heading.png) top left no-repeat;
 	height: 526px;

@@ -1,1 +1,25 @@
-%h1 zomgwtfbbq
+#contact.section
+  %h2.section_heading Contact
+  %h3 Contact HyperboleDesign
+  - if @errors
+    %h3.form_error There was an error when trying to submit your message, please fix the highlighted fields below.
+  %form#contact_form{"accept-charset" => "utf-8", :action => "/contact", :method => "post"}
+    %fieldset
+      %label{:for => "name"} Name
+      %input#name{:name => "contact[name]", :type => "text", :value => params[:contact][:name], :class => @name }/
+      - unless @name.blank?
+        %label.error Please provide your name.
+      %label{:for => "email"} Email
+      %input#email{:name => "contact[email]", :type => "text", :value => params[:contact][:email], :class => @email }/
+      - unless @email.blank?
+        %label.error Please provide a valid email address.
+      %label{:for => "email"} Message
+      %textarea#message{:cols => "40", :name => "contact[message]", :rows => "8", :class => @msg}
+        = params[:contact][:message]
+      - unless @msg.blank?
+        %label.error Please enter a message.
+      %input{:type => "submit", :value => "Say hello."}/
+
+#footer
+  %h2.section_heading Footer
+  %p.copy Copyright &copy; 2010 &mdash; Jake Dahn
