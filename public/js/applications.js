@@ -12,7 +12,7 @@ $.fn.pulsefade = function(interval) {
 };
 
 $(function(){
-  $("#top_layer").pulsefade(5000);
+  $("#top_layer").pulsefade(60000);
   
   $(":submit").after("<div class='spinner'></div>")
   $(".spinner").hide()
